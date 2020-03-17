@@ -1,0 +1,62 @@
+h1 {
+background-color: pink;
+font-style: oblique;
+font-weight: bold;
+font-size: 100px;
+
+}
+
+body {
+
+    background-image: url("../images/ToolBackground.jpg");
+}
+
+button {
+    size: 75px;
+    background-color: red;
+    font-style: oblique;
+    color: white;
+}
+
+h3 {
+    size: 100px;
+    background-color: pink;
+}
+
+
+.questionsDivs {
+
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#resultsPage {
+
+    background-color: royalblue;
+
+}
+
+#Timer {
+
+    font-size: 50px;
+    color: seashell;
+
+}
+
+#start {
+    font-size: 100px;
+}
+
+#finished {
+    
+    font-size: 100px;
+
+}
+
+.endStuff {
+
+    font-size: 50px;
+
+    color: rgb(247, 0, 255);
+
+}

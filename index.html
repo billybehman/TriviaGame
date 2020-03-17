@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Trivia Game</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
+</head>
+
+<body>
+
+
+    <h1 class="text-center">Tool Trivia</h1>
+
+    <button id="start">Start</button>
+    
+    <div id="questionsAndTimer">  
+    
+        <div class="container">
+
+            <div class="row">
+
+                <div class="bg-danger col-sm-3 text-center" id="Timer">Time Remaining: 80</div>
+
+            </div>
+
+        </div>
+
+    
+    
+        <div class="questionsDivs text-center" id="question1">
+            <h3>What is the name of the greates band of all time?</h3>
+            <button class="question1Answers" id="questionOneAnswer1"> Yool</button>
+            <button class="question1Answers" id="questionOneAnswer2">Tool</button>
+            <button class="question1Answers" id="questionOneAnswer3">Cool</button>
+            <button class="question1Answers" id="questionOneAnswer4">Fool</button>
+        </div>
+
+        <div class="questionsDivs text-center" id="question2">
+            <h3>Who is the lead singer of Tool?</h3>
+            <button class="question2Answers" id="questionTwoAnswer1">Josh Groban</button>
+            <button class="question2Answers" id="questionTwoAnswer2">Maynard James Keenan</button>
+            <button class="question2Answers" id="questionTwoAnswer3">Jennifer Lopez</button>
+            <button class="question2Answers" id="questionTwoAnswer4">Josh Groban's brother Ben Groban</button>
+        </div>
+
+        <div class="questionsDivs text-center" id="question3">
+            <h3>Why doesn't everyone listen to Tool?</h3>
+            <button class="question3Answers" id="questionThreeAnswer1">Cuz they haven't heard of Tool</button>
+            <button class="question3Answers" id="questionThreeAnswer2">Cuz they have a bad taste in music/art/life</button>
+            <button class="question3Answers" id="questionThreeAnswer3">Cuz they're a fool</button>
+            <button class="question3Answers" id="questionThreeAnswer4">All of the above</button>
+        </div>
+
+        <div class="questionsDivs text-center" id="question4">
+            <h3>What time signature is the song "Die Eier von Satan" scored in?</h3>
+            <button class="question4Answers" id="questionFourAnswer1">9/8</button>
+            <button class="question4Answers" id="questionFourAnswer2">4.5/4</button>
+            <button class="question4Answers" id="questionFourAnswer3">6/8</button>
+            <button class="question4Answers" id="questionFourAnswer4">4/4</button>
+        </div>
+
+        <div class="questionsDivs text-center" id="question5">
+            <h3>Tool is life?</h3>
+            <button class="question5Answers" id="questionFiveAnswer1">true</button>
+            <button class="question5Answers" id="questionFiveAnswer2">false</button>
+            <button class="question5Answers" id="questionFiveAnswer3">very true</button>
+            <button class="question5Answers" id="questionFiveAnswer4">factual beyond debatability</button>
+        </div>
+
+        <div class="questionsDivs text-center" id="question6">
+            <h3>If you listen to Tool for long enough, what will happen?</h3>
+            <button class="question6Answers" id="questionSixAnswer1">You'll understand metaphysics</button>
+            <button class="question6Answers" id="questionSixAnswer2">You'll explode</button>
+            <button class="question6Answers" id="questionSixAnswer3">Error</button>
+            <button class="question6Answers" id="questionSixAnswer4">Tool</button>
+        </div>
+
+        <div class="questionsDivs text-center" id="question7">
+            <h3>What is the name of the album Tool recorded with producer Sylvia Massy?</h3>
+            <button class="question7Answers" id="questionSevenAnswer1">Undertow</button>
+            <button class="question7Answers" id="questionSevenAnswer2">10,000 days</button>
+            <button class="question7Answers" id="questionSevenAnswer3">Opiate</button>
+            <button class="question7Answers" id="questionSevenAnswer4">Fear Inoculum</button>
+        </div>
+
+        <div class="questionsDivs text-center" id="question8">
+            <h3>Which of these songs does not feature a poly rhythm between Danny Carey and Adam Jones?</h3>
+            <button class="question8Answers" id="questionEightAnswer1">Lateralus</button>
+            <button class="question8Answers" id="questionEightAnswer2">Hush</button>
+            <button class="question8Answers" id="questionEightAnswer3">Parabola</button>
+            <button class="question8Answers" id="questionEightAnswer4">Pneuma</button>
+        </div>
+
+        <div class="questionsDivs text-center" id="question9">
+            <h3>Tool?</h3>
+            <button class="question9Answers" id="questionNineAnswer1">Tool?</button>
+            <button class="question9Answers" id="questionNineAnswer2">Tool</button>
+            <button class="question9Answers" id="questionNineAnswer3">Tool!</button>
+            <button class="question9Answers" id="questionNineAnswer4">TOOL!</button>
+        </div>
+
+        <div class="questionsDivs text-center" id="question10">
+            <h3>10 to 2 AM, X, Yogi DMT, and a box of ___.</h3>
+            <button class="question10Answers" id="questionTenAnswer1">Chocolates</button>
+            <button class="question10Answers" id="questionTenAnswer2">Cigeretts</button>
+            <button class="question10Answers" id="questionTenAnswer3">Kryspy Kremes</button>
+            <button class="question10Answers" id="questionTenAnswer4">Letters from home</button>
+        </div>
+
+        <button id="finished">Finished</button>
+
+    </div>
+
+    <div id="resultsPage">
+
+        <div class="text-center endStuff">Here are your results:</div>
+        <div class="text-center endStuff" id="correctAnswersShown">Correct Answeres</div>
+        <div class="text-center endStuff" id="incorrectAnswersShown">Incorrect Answers</div>
+        <div class="text-center endStuff" id="unansweredQuestionsShown">Unanswered Questions</div>
+
+
+    </div>
+       
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   <!-- <script src="assets/javascript/app.js"></script> -->
+    <script src="assets/javascript/app.js"></script>
+    
+</body>
+
+</html>
+
+
+<!-- //1) Create a start button that loads the questions page when clicked
+// 1) start at timer when the questions page loads
+// 2) have four buttons for each questions div. The button that is pressed visually reacts, if another button is pressed then the previous button unreacts
+// 3) make it so that when the timer hits 0, the computer reads the answers chosen and compares that with the correct answers. it also has to recognize which questions are unanswered. 
+// 4) the computer must then bring you to a new screen that shows you your correct answeres, incorrect answeres, and your questions unsanswered -->
+
+
+<!-- create an array of correct answers. match the arraw of answers chosen to the array of correct ones?
+if a button is clicked, then the button will = clicked, if another button is clicked, then that button will = unclicked, and the new button will = clicked
+when the timer's up or when they click, finished, the computer will compare the clicked buttons to the correct answers array 
+
+on click, unclick buttons, click button that was clicked?
+
+when the timer ends or on the finished button click, add the clicked buttons to the guessed answers array
+
+if (correct answer array[0] = guessedanswerarray[0]) {
+    correct guess ++
+
+} else if (guessedAnswerArray[0] = null
+    unsanswered ++
+
+
+udefined, or I could have another if statement that says that if there's no answer then it equals a certain variable) {
+
+} else {
+incorrect guess ++
+    
+}
+    
+-->
+
