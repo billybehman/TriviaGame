@@ -1,2 +1,1 @@
-# TriviaGame
-trivia game
+https://billybehman.github.io/TriviaGame/
